@@ -1,0 +1,10 @@
+{
+  "repository_scope": "Partial protocol description; not executable full nested CV",
+  "outer_cv": {"folds": 10, "repeats": 10, "stratified": true},
+  "inner_cv": {"folds": 3, "stratified": true},
+  "noise_ratios": [0.0, 0.05, 0.10, 0.15, 0.20, 0.25],
+  "noise_applied_to": "outer training samples only",
+  "search_objective": "maximize mean inner-fold ACC; macro-F1 breaks ties",
+  "parameter_names": ["nu1", "nu2", "delta", "gamma", "k", "n_min", "tau_p", "tau_d", "omega_min"],
+  "note": "This file does not contain fold-specific selected parameters or raw result-producing code."
+}
